@@ -1,0 +1,21 @@
+class Employee{
+    private double salary;
+    public void setsalary(double salary){
+        if(salary>=0){
+            this.salary=salary;
+        }else{
+            System.out.println("Invalid salary");
+        }
+    }
+    public double getsalary(){
+        return salary;
+    }
+}
+public class main{
+    public static void main(String[]args){
+        Employee e=new Employee();
+        e.setsalary(500000);
+        System.out.println(e.getsalary());
+        e.setsalary(-1000);
+    }
+}
